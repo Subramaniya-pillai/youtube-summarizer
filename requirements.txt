@@ -1,6 +1,5 @@
-youtube_transcript_api
-streamlit
-google-generativeai
-python-dotenv
-pathlib
-yt-dlp==2025.1.26
+youtube_transcript_api>=0.6.1
+streamlit>=1.28.0
+google-generativeai>=0.3.0
+python-dotenv>=1.0.0
+yt-dlp>=2023.12.30

@@ -1,6 +1,4 @@
 import streamlit as st
-from dotenv import load_dotenv
-import os
 import google.generativeai as genai
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, VideoUnavailable
 from urllib.parse import urlparse, parse_qs
@@ -52,7 +50,6 @@ def extract_video_id(url):
 def extract_transcript_with_ytdlp(video_url):
     try:
         import tempfile
-        import os
         
         # Create a temporary directory
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -201,8 +198,7 @@ if st.button("Get Detailed Notes"):
             summary = generate_gemini_content(transcript_text, prompt)
             st.markdown("## 📝 Detailed Notes:")
             st.write(summary)
-
-# Add developer credit in bottom right
+# developer credit
 st.markdown("---")
 st.markdown(
     '<div style="text-align: right; color: gray; font-size: 0.8em;">Developed by Subramani</div>',
