@@ -3,3 +3,4 @@ streamlit
 google-generativeai
 python-dotenv
 pathlib
+yt-dlp==2025.1.26
