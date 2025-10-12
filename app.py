@@ -50,6 +50,7 @@ def extract_video_id(url):
 def extract_transcript_with_ytdlp(video_url):
     try:
         import tempfile
+        import os
         
         # Create a temporary directory
         with tempfile.TemporaryDirectory() as temp_dir:
