@@ -15,9 +15,9 @@ if not api_key:
 
 try:
     genai.configure(api_key=api_key)
-    st.sidebar.success("✅ API key configured!")
+    st.sidebar.success(" API key configured!")
 except Exception as e:
-    st.sidebar.error(f"❌ Invalid API key: {str(e)}")
+    st.sidebar.error(f" Invalid API key: {str(e)}")
     st.stop()
 
 # Prompt template for Gemini
